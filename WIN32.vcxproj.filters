@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Configuration Files">
+      <UniqueIdentifier>{19ff1a34-36de-4c48-9d10-3fb1fa0d1fa4}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="App Source">
+      <UniqueIdentifier>{34567deb-d5ab-4a56-8640-0aaec609521a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="FreeRTOS">
+      <UniqueIdentifier>{af3445a1-4908-4170-89ed-39345d90d30c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FreeRTOS\Source">
+      <UniqueIdentifier>{f32be356-4763-4cae-9020-974a2638cb08}</UniqueIdentifier>
+      <Extensions>*.c</Extensions>
+    </Filter>
+    <Filter Include="FreeRTOS\Source\Portable">
+      <UniqueIdentifier>{88f409e6-d396-4ac5-94bd-7a99c914be46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FreeRTOS\Inc">
+      <UniqueIdentifier>{09dfedca-68be-4430-a3b3-c24febea6161}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App Source\System">
+      <UniqueIdentifier>{a26ae151-835e-45e1-934e-dff6bb768c82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App Source\SerialPort">
+      <UniqueIdentifier>{3bddcfc0-f745-48f2-ac48-fb5c3536e0fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App Source\Infantry">
+      <UniqueIdentifier>{5e22ec30-073b-4466-927f-cccd549134bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SRML">
+      <UniqueIdentifier>{fe544f5e-35e2-4e73-a232-cd4ac11e553a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App Source\SimInterface">
+      <UniqueIdentifier>{3de8980c-19b9-40a8-874a-448901619753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App Source\SimInterface\CoppeliaSim">
+      <UniqueIdentifier>{484b67cc-8838-4765-a0f0-6ca65f2bef6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App Source\SimInterface\CoppeliaSim\remoteApi">
+      <UniqueIdentifier>{40e9d325-7580-4f21-9390-8f6b6c04226e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App Source\Rune">
+      <UniqueIdentifier>{0b9bef36-2e98-4327-9818-aec7d037b0de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>App Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\MSVC-MingW\port.c">
+      <Filter>FreeRTOS\Source\Portable</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\MemMang\heap_5.c">
+      <Filter>FreeRTOS\Source\Portable</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\croutine.c">
+      <Filter>FreeRTOS\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\event_groups.c">
+      <Filter>FreeRTOS\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\list.c">
+      <Filter>FreeRTOS\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\queue.c">
+      <Filter>FreeRTOS\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\stream_buffer.c">
+      <Filter>FreeRTOS\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\tasks.c">
+      <Filter>FreeRTOS\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\timers.c">
+      <Filter>FreeRTOS\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Usr\System_Config.cpp">
+      <Filter>App Source\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Usr\System_DataPool.cpp">
+      <Filter>App Source\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Usr\User_Task.cpp">
+      <Filter>App Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Usr\win32_support.cpp">
+      <Filter>App Source\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Usr\SerialPort\SerialPort.cpp">
+      <Filter>App Source\SerialPort</Filter>
+    </ClCompile>
+    <ClCompile Include="Usr\Infantry\chassis_ctrl.cpp">
+      <Filter>App Source\Infantry</Filter>
+    </ClCompile>
+    <ClCompile Include="Usr\Infantry\gimbal_ctrl.cpp">
+      <Filter>App Source\Infantry</Filter>
+    </ClCompile>
+    <ClCompile Include="Usr\Infantry\vision.cpp">
+      <Filter>App Source\Infantry</Filter>
+    </ClCompile>
+    <ClCompile Include="SRML\dr16.cpp">
+      <Filter>SRML</Filter>
+    </ClCompile>
+    <ClCompile Include="SRML\filters.cpp">
+      <Filter>SRML</Filter>
+    </ClCompile>
+    <ClCompile Include="SRML\PID.cpp">
+      <Filter>SRML</Filter>
+    </ClCompile>
+    <ClCompile Include="Usr\Rune\rune_ctrl.cpp">
+      <Filter>App Source\Rune</Filter>
+    </ClCompile>
+    <ClCompile Include="Usr\SimInterface\simulation.cpp">
+      <Filter>App Source\SimInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="Usr\SimInterface\CoppeliaSim\CoppeliaSim.cpp">
+      <Filter>App Source\SimInterface\CoppeliaSim</Filter>
+    </ClCompile>
+    <ClCompile Include="Usr\SimInterface\CoppeliaSim\remoteApi\extApi.c">
+      <Filter>App Source\SimInterface\CoppeliaSim\remoteApi</Filter>
+    </ClCompile>
+    <ClCompile Include="Usr\SimInterface\CoppeliaSim\remoteApi\extApiPlatform.c">
+      <Filter>App Source\SimInterface\CoppeliaSim\remoteApi</Filter>
+    </ClCompile>
+    <ClCompile Include="Run-time-stats-utils.c">
+      <Filter>FreeRTOS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FreeRTOS\include\croutine.h">
+      <Filter>FreeRTOS\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\event_groups.h">
+      <Filter>FreeRTOS\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\FreeRTOS.h">
+      <Filter>FreeRTOS\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\list.h">
+      <Filter>FreeRTOS\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\message_buffer.h">
+      <Filter>FreeRTOS\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\portable.h">
+      <Filter>FreeRTOS\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\queue.h">
+      <Filter>FreeRTOS\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\semphr.h">
+      <Filter>FreeRTOS\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\stream_buffer.h">
+      <Filter>FreeRTOS\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\task.h">
+      <Filter>FreeRTOS\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\timers.h">
+      <Filter>FreeRTOS\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\MSVC-MingW\portmacro.h">
+      <Filter>FreeRTOS\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\projdefs.h">
+      <Filter>FreeRTOS\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOSConfig.h">
+      <Filter>Configuration Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Usr\System_Config.h">
+      <Filter>App Source\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Usr\System_DataPool.h">
+      <Filter>App Source\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Usr\User_Task.h">
+      <Filter>App Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Usr\win32_support.h">
+      <Filter>App Source\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Usr\SerialPort\SerialPort.h">
+      <Filter>App Source\SerialPort</Filter>
+    </ClInclude>
+    <ClInclude Include="Usr\Infantry\chassis_ctrl.h">
+      <Filter>App Source\Infantry</Filter>
+    </ClInclude>
+    <ClInclude Include="Usr\Infantry\gimbal_ctrl.h">
+      <Filter>App Source\Infantry</Filter>
+    </ClInclude>
+    <ClInclude Include="Usr\Infantry\Infantry_def.h">
+      <Filter>App Source\Infantry</Filter>
+    </ClInclude>
+    <ClInclude Include="Usr\Infantry\vision.h">
+      <Filter>App Source\Infantry</Filter>
+    </ClInclude>
+    <ClInclude Include="SRML\dr16.h">
+      <Filter>SRML</Filter>
+    </ClInclude>
+    <ClInclude Include="SRML\filters.h">
+      <Filter>SRML</Filter>
+    </ClInclude>
+    <ClInclude Include="SRML\PID.h">
+      <Filter>SRML</Filter>
+    </ClInclude>
+    <ClInclude Include="Usr\Rune\rune_ctrl.h">
+      <Filter>App Source\Rune</Filter>
+    </ClInclude>
+    <ClInclude Include="Usr\SimInterface\simulation.h">
+      <Filter>App Source\SimInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="Usr\SimInterface\CoppeliaSim\CoppeliaSim.h">
+      <Filter>App Source\SimInterface\CoppeliaSim</Filter>
+    </ClInclude>
+    <ClInclude Include="Usr\SimInterface\CoppeliaSim\remoteApi\extApi.h">
+      <Filter>App Source\SimInterface\CoppeliaSim\remoteApi</Filter>
+    </ClInclude>
+    <ClInclude Include="Usr\SimInterface\CoppeliaSim\remoteApi\extApiInternal.h">
+      <Filter>App Source\SimInterface\CoppeliaSim\remoteApi</Filter>
+    </ClInclude>
+    <ClInclude Include="Usr\SimInterface\CoppeliaSim\remoteApi\extApiPlatform.h">
+      <Filter>App Source\SimInterface\CoppeliaSim\remoteApi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

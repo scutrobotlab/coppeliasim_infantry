@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C686325E-3261-42F7-AEB1-DDE5280E1CEB}</ProjectGuid>
+    <ProjectName>SIM_RTOS</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>D:\opencv\build\include\opencv2;D:\opencv\build\include;.;.\FreeRTOS\include;.\FreeRTOS\Common\include;.\FreeRTOS\portable\MemMang;.\FreeRTOS\portable\MSVC-MingW;.\SRML;.\SRML\Middlewares\Algorithm;.\SRML\Middlewares\Module;.\SRML\Middlewares\Utility;.\SRML\Middlewares\Protocol;.\Usr;.\Usr\SimInterface;.\Usr\SimInterface\CoppeliaSim;.\Usr\SimInterface\CoppeliaSim\include;.\Usr\SimInterface\CoppeliaSim\common;.\Usr\SimInterface\CoppeliaSim\remoteApi;.\Usr\SerialPort;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Debug/WIN32.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_WIN32_WINNT=0x0601;WINVER=0x400;_CRT_SECURE_NO_WARNINGS;NON_MATLAB_PARSING;MAX_EXT_API_CONNECTIONS=255;DO_NOT_USE_SHARED_MEMORY;SYNC_MODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\Debug/WIN32.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <AdditionalOptions>/source-charset:utf-8 /wd4210 /wc4574 %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4574;4820;4668;4255;4710;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0c09</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>.\Debug/SIM_RTOS.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/WIN32.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <Profile>true</Profile>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/WIN32.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="FreeRTOS\croutine.c" />
+    <ClCompile Include="FreeRTOS\event_groups.c" />
+    <ClCompile Include="FreeRTOS\list.c" />
+    <ClCompile Include="FreeRTOS\portable\MemMang\heap_5.c" />
+    <ClCompile Include="FreeRTOS\portable\MSVC-MingW\port.c" />
+    <ClCompile Include="FreeRTOS\queue.c" />
+    <ClCompile Include="FreeRTOS\stream_buffer.c" />
+    <ClCompile Include="FreeRTOS\tasks.c" />
+    <ClCompile Include="FreeRTOS\timers.c" />
+    <ClCompile Include="main.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Run-time-stats-utils.c" />
+    <ClCompile Include="SRML\dr16.cpp" />
+    <ClCompile Include="SRML\filters.cpp" />
+    <ClCompile Include="SRML\PID.cpp" />
+    <ClCompile Include="Usr\Infantry\chassis_ctrl.cpp" />
+    <ClCompile Include="Usr\Infantry\gimbal_ctrl.cpp" />
+    <ClCompile Include="Usr\Infantry\vision.cpp" />
+    <ClCompile Include="Usr\Rune\rune_ctrl.cpp" />
+    <ClCompile Include="Usr\SerialPort\SerialPort.cpp" />
+    <ClCompile Include="Usr\SimInterface\CoppeliaSim\CoppeliaSim.cpp" />
+    <ClCompile Include="Usr\SimInterface\CoppeliaSim\remoteApi\extApi.c" />
+    <ClCompile Include="Usr\SimInterface\CoppeliaSim\remoteApi\extApiPlatform.c" />
+    <ClCompile Include="Usr\SimInterface\simulation.cpp" />
+    <ClCompile Include="Usr\System_Config.cpp" />
+    <ClCompile Include="Usr\System_DataPool.cpp" />
+    <ClCompile Include="Usr\User_Task.cpp" />
+    <ClCompile Include="Usr\win32_support.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FreeRTOSConfig.h" />
+    <ClInclude Include="FreeRTOS\include\croutine.h" />
+    <ClInclude Include="FreeRTOS\include\event_groups.h" />
+    <ClInclude Include="FreeRTOS\include\FreeRTOS.h" />
+    <ClInclude Include="FreeRTOS\include\list.h" />
+    <ClInclude Include="FreeRTOS\include\message_buffer.h" />
+    <ClInclude Include="FreeRTOS\include\portable.h" />
+    <ClInclude Include="FreeRTOS\include\projdefs.h" />
+    <ClInclude Include="FreeRTOS\include\queue.h" />
+    <ClInclude Include="FreeRTOS\include\semphr.h" />
+    <ClInclude Include="FreeRTOS\include\stream_buffer.h" />
+    <ClInclude Include="FreeRTOS\include\task.h" />
+    <ClInclude Include="FreeRTOS\include\timers.h" />
+    <ClInclude Include="FreeRTOS\portable\MSVC-MingW\portmacro.h" />
+    <ClInclude Include="SRML\dr16.h" />
+    <ClInclude Include="SRML\filters.h" />
+    <ClInclude Include="SRML\PID.h" />
+    <ClInclude Include="Usr\Infantry\chassis_ctrl.h" />
+    <ClInclude Include="Usr\Infantry\gimbal_ctrl.h" />
+    <ClInclude Include="Usr\Infantry\Infantry_def.h" />
+    <ClInclude Include="Usr\Infantry\vision.h" />
+    <ClInclude Include="Usr\Rune\rune_ctrl.h" />
+    <ClInclude Include="Usr\SerialPort\SerialPort.h" />
+    <ClInclude Include="Usr\SimInterface\CoppeliaSim\CoppeliaSim.h" />
+    <ClInclude Include="Usr\SimInterface\CoppeliaSim\remoteApi\extApi.h" />
+    <ClInclude Include="Usr\SimInterface\CoppeliaSim\remoteApi\extApiInternal.h" />
+    <ClInclude Include="Usr\SimInterface\CoppeliaSim\remoteApi\extApiPlatform.h" />
+    <ClInclude Include="Usr\SimInterface\simulation.h" />
+    <ClInclude Include="Usr\System_Config.h" />
+    <ClInclude Include="Usr\System_DataPool.h" />
+    <ClInclude Include="Usr\User_Task.h" />
+    <ClInclude Include="Usr\win32_support.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

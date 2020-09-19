@@ -1,0 +1,3 @@
+[submodule "SRML"]
+	path = SRML
+	url = https://www.scut-robotlab.cn/git/Embedded/SRML.git
